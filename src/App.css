@@ -1,0 +1,22 @@
+css
+/* 強制讓整個網頁底色變黑，移除所有預設白邊 */
+:root {
+  background-color: #121212; /* 跟你的 App.jsx 背景色一致 */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  min-height: 100vh;
+  display: block; /* 移除 Vite 預設的 flex 居中 */
+}
+
+#root {
+  width: 100%;
+}
+
+/* 讓表格在捲動時背景也是黑的 */
+table {
+  background-color: #121212;
+}
