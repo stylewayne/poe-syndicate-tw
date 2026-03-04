@@ -81,7 +81,7 @@ const npcList = Object.keys(syndicateData);
 function App() {
    // 1. 將顏色改為 State，並設定預設值
   const [gridState, setGridState] = useState({});
-  const [tierColors, setTierColors] = useState(['#242424', '#259e25', '#ddb12d', '#721c24']);
+  const [tierColors, setTierColors] = useState(['#242424', '#259e25', '#ac8a27', '#721c24']);
   
   const clearAll = () => {
     if (window.confirm("確定要清空所有已選顏色嗎？")) {
@@ -173,15 +173,15 @@ function App() {
     <div style={{ padding: '15px', backgroundColor: '#121212', minHeight: '100vh', fontFamily: 'sans-serif' }}>
       {/* 頂部標題與按鈕區 - 縮小間距 */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '15px', flexWrap: 'wrap', gap: '10px' }}>
-        <h1 style={{ color: '#fff', margin: 0, fontSize: '20px' }}>PoE 反叛機制獎勵自定義表</h1>
+        <h1 style={{ color: '#fff', margin: 0, fontSize: '30px' }}>PoE 反叛機制獎勵自定義表 3.28</h1>
         <div style={{ display: 'flex', gap: '8px' }}>
         </div>
       </div>
-      <p style={{ color: '#ffffff', fontSize: '12px', marginTop: '15px' }}>* 點擊格子可循環切換 Tier 顏色</p>
+      <p style={{ color: '#ffffff', fontSize: '14px', marginTop: '15px' }}>* 點擊格子可循環切換 Tier 顏色</p>
 
-       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '15px', backgroundColor: '#1f1f1f', padding: '15px', borderRadius: '8px', border: '1px solid #333', flexWrap: 'wrap', gap: '20px' }}>
+       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px', backgroundColor: '#1f1f1f', padding: '15px', borderRadius: '8px', border: '1px solid #333', flexWrap: 'wrap', gap: '20px' }}>
         {/* 左側：功能按鈕 */}
-        <div style={{ display: 'flex', gap: '10px' }}>
+        <div style={{ display: 'flex', gap: '12px' }}>
           <button onClick={takeScreenshot} style={styles.btn}>📸 儲存圖片</button>
           <button onClick={clearAll} style={{ ...styles.btn, backgroundColor: '#442222' }}>🧹 一鍵清空</button>
           <button onClick={() => {
@@ -253,7 +253,7 @@ function App() {
               />
               <span style={{ 
                 color: npcTierIdx === 0 ? '#eee' : '#fff', 
-                fontSize: '12px', 
+                fontSize: '20px',
                 fontWeight: 'bold' 
               }}>
                 {npc}
@@ -274,7 +274,7 @@ function App() {
                   fontWeight: 'bold', 
                   textAlign: 'center', 
                   padding: '8px 4px', 
-                  fontSize: '16px',
+                  fontSize: '18px',
                   border: '2px solid #000', 
                   position: 'sticky',
                   left: 0,
@@ -325,10 +325,10 @@ function App() {
                         </div>
                         {/* 獎勵文字 - 縮小字體並限制寬度 */}
                         <span style={{ 
-                          fontSize: '12px', 
+                          fontSize: '12.8px',
                           color: '#fff',
                           lineHeight: '1.1',
-                          maxWidth: '100px',
+                          maxWidth: '90px',
                           display: 'block',
                           overflow: 'hidden',
                           textOverflow: 'ellipsis',
