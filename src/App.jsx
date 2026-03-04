@@ -62,7 +62,7 @@ const syndicateData = {
     },
   "托菈": {
     image: "Tora.png",
-    rewards: {"傳送使": "精良寶石_費斯特之鏡", "禦防使": "寶石陷阱箱", "修研使": "寶石工藝台", "調停使": "製圖聖甲蟲" }
+    rewards: {"傳送使": "精良寶石_費斯特之鏡", "禦防使": "寶石陷阱箱", "修研使": "寶石工藝台", "調停使": "祭祀聖甲蟲" }
     },
   "瓦甘": {
     image: "Vagan.png",
@@ -196,7 +196,7 @@ function App() {
           {tierColors.map((color, index) => (
             index === 0 ? null : ( // 預設底色不開放改，只改 1, 2, 3
               <div key={index} style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-                <span style={{ fontSize: '12px' }}>T{index}</span>
+                <span style={{ fontSize: '12px',color: '#aaa' }}>T{index}</span>
                 <input 
                   type="color" 
                   value={color} 
@@ -243,7 +243,7 @@ function App() {
                 alt={npc} 
                 style={{ 
                   width: '95px', 
-                  height: '105px', 
+                  height: '95px', 
                   borderRadius: '0', 
                   objectFit: 'cover',
                   display: 'block',
