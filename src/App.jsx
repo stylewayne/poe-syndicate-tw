@@ -66,7 +66,7 @@ const syndicateData = {
     },
   "瓦甘": {
     image: "Vagan.png",
-    rewards: {"傳送使": "孵化器寶箱", "禦防使": "孵化器加速", "修研使": "破裂石工藝台", "調停使": "戰亂聖甲蟲" }
+    rewards: {"傳送使": "傭兵聖甲蟲", "禦防使": "壟罩傳奇陷阱箱", "修研使": "破裂石工藝台", "調停使": "戰亂聖甲蟲" }
     },
   "瓦西里": {
     image: "Vorici.png",
@@ -173,7 +173,7 @@ function App() {
     <div style={{ padding: '15px', backgroundColor: '#121212', minHeight: '100vh', fontFamily: 'sans-serif' }}>
       {/* 頂部標題與按鈕區 - 縮小間距 */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '15px', flexWrap: 'wrap', gap: '10px' }}>
-        <h1 style={{ color: '#fff', margin: 0, fontSize: '30px' }}>PoE 反叛機制獎勵自定義表 3.28</h1>
+        <h1 style={{ color: '#fff', margin: 0, fontSize: '30px' }}>PoE 反叛機制獎勵自定義表 3.29</h1>
         <div style={{ display: 'flex', gap: '8px' }}>
         </div>
       </div>
