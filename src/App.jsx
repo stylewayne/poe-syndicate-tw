@@ -173,7 +173,7 @@ function App() {
     <div style={{ padding: '15px', backgroundColor: '#121212', minHeight: '100vh', fontFamily: 'sans-serif' }}>
       {/* 頂部標題與按鈕區 - 縮小間距 */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '15px', flexWrap: 'wrap', gap: '10px' }}>
-        <h1 style={{ color: '#fff', margin: 0, fontSize: '30px' }}>PoE 反叛機制獎勵自定義表 3.29</h1>
+        <h1 style={{ color: '#fff', margin: 0, fontSize: '30px' }}>PoE 反叛機制獎勵自定義表 3.30</h1>
         <div style={{ display: 'flex', gap: '8px' }}>
         </div>
       </div>
@@ -298,7 +298,7 @@ function App() {
                         padding: '4px 2px', 
                         cursor: 'pointer',
                         textAlign: 'center',
-                        minWidth: '100px', // 縮小格子寬度 (從 130px -> 105px)
+                        minWidth: '100px', // 縮小格子寬度 
                         transition: 'background-color 0.15s'
                       }}
                     >
